@@ -3,7 +3,7 @@
  * main - print the string in put function
  *
  * Description: using the main fuction
- * this program prints :Programming is like building a mulyilingual puzzle
+ * this program prints:"Pogramming is like building a multilingual puzzle
  * Return: 0
  */
 int main(void)

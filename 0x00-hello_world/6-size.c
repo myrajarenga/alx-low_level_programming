@@ -8,10 +8,10 @@
  */
 int main(void)
 {   
-	chat c;
+	char c;
 	int i;
-	log li;
-	long long lli
+	long li;
+	long long lli;
 	float f;
 
         printf("Size of a char: %ld bytes(s)\n", sizeof(c));

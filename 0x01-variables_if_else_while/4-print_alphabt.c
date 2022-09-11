@@ -3,24 +3,27 @@
 
 /**
  * main entry point
- * Description print alphabet in lowercase
+ * Description: "print alphabet in lowercase
  * Return: 0
  */
 int main(void)
 {
-int ch;
-for (ch = 'a' ; ch <= 'z'; ch++)
-{    	
-  if  (ch != 'e' && ch != 'q')
-}
-   {
-	   putchar(ch);
-    }
+          char a;
+	  
+          for (a = 'a' ; a <= 'z'; a++)
+           {    	
+                if  (a == 'q' || a == 'e')
+
+                 {
+			 continue;
+	         }
+	         putchar(a);
+           }
  
-putchar ('\n');
+           putchar ('\n');
  
   
-return (0);
+         return (0);
   
 }
 

@@ -2,10 +2,10 @@
 #include <unistd.h>
 
 /**
- * main entry point
- * Description: "print alphabet in lowercase
- * Return: 0
- */
+* main entry point
+* Description: "print alphabet in lowercase
+* Return: 0
+*/
 int main(void)
 {
           char a;

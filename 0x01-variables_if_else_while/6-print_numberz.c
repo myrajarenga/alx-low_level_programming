@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- *
- * main - entry point
- *
- * Return: alway returns 0
- *
- *     
- */
+*
+* main - entry point
+* Description: "prints all single digit numbers of base 10 starting from 0, followed by a new line
+* Return: alway returns 0
+*
+*      
+*/
 int main(void)
 
 {

@@ -9,21 +9,18 @@
 int main(void)
 {
           char a;
-	  
-          for (a = 'a' ; a <= 'z'; a++)
-           {    	
-                if  (a == 'q' || a == 'e')
+	for (a = 'a' ; a <= 'z'; a++)
+	{    	
+		if  (a == 'q' || a == 'e')
 
                  {
 			 continue;
 	         }
-	         putchar(a);
+		putchar(a);
+
            }
- 
-           putchar ('\n');
- 
-  
-         return (0);
+       	putchar ('\n');
+	return (0);
   
 }
 

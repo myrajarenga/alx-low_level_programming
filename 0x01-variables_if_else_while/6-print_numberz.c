@@ -2,20 +2,20 @@
 
 /**
  *
- * main - entry point
- * Description: "prints all single digit numbers of base 10 starting from 0, followed by a new line
- * Return: always returns 0
+ * main - prints all single digit numberz 
+ * Description: "print characters bellow 10
+ * Return: always 0 (success)
  *
- *      
  */
-int main(void)
 
+int main(void)
 {
 	int a = 0;
-	for (; a < 10 ; a++)
 
+	for (; a < 10 ; a++)
+	{
 		putchar('0' + a);
-	
+	}
 	putchar('\n');
 	return (0);
 

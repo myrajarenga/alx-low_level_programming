@@ -2,9 +2,8 @@
 
 /**
  * main - entry point
- *
- * Return: always returnds0
- * 
+ * Description: print lowercase alphabets in reverse
+ * Return: always 0 (success)
  */
 
 int main(void)
@@ -14,5 +13,5 @@ int main(void)
 	for (a = 'z' ; a >= 'a' ; a--)
 		putchar(a);
 	putchar('\n');
-	return(0);
+	return (0);
 }

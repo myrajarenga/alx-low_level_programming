@@ -1,26 +1,25 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - entry point
- * Return: always return 0
- *
+ * Description: print base 16 numbers
+ * Return: always 0 (success)
  */
 int main(void)
 {
-	unsigned char a = '0';
-	int i;
+	char c;
+	char d = '0';
 
-	for (i = 0; i <10; i++)
+	while (d <= '9')
 	{
-		putchar(a);
-		a++;
+		putchar('0' + d);
+		d++;
 	}
-	a = 'i';
-		for(i = 0; i < 6; i++)
-		{
-			putchar('0' + a);
-			a++;
-		}
+	for (c = 'a' ; c <= 'f' ; c++)
+	{
+	putchar(c);
+	}
 	putchar('\n');
-	return(0);
+	return (0);
 }

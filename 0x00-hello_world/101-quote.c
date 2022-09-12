@@ -3,8 +3,9 @@
 
 /**
  *
- * main -Entry point
- * Description: prints Dor's quote
+ * main -print the string in the write function
+ * Description: using the main function
+ * this program prints " and that piece of art is useful\" - Dor's Korpar, 2015-10-19\"
  * Return: Always 1 (success)
  */
 

@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- *
- * main - prints all single digit numberz 
- * Description: "print characters bellow 10
+ * main - entry point
+ * Descrption: print single digit numberz
  * Return: always 0 (success)
  *
  */

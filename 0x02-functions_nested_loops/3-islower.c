@@ -1,12 +1,10 @@
-nclude "main.h"
+#include "main.h"
 
 /**
- * _islower - checksfor lowercase character
- * @c: the integer value it receives
+ * _islower - main function
+ * @c: character to compare
  *
- * Return: 1 if charcacter c is lowercase,
- *
- * 0 if false
+ * Return: 1 if true , 0 if false
  *
  */
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print the first 50 fibanocci numbers starting with 1 and 2 followed by anew line
+ * main - print the first 50 fibanocci numbers
  * Return: Always 0 (success)
  */
 int main(void)

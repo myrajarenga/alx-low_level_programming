@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 - entry point
  * Descriptiopn: print alphabet in lowercase ten times followed by anew line
- * 
+ *
  */
 void print_alphabet_x10(void)
 {

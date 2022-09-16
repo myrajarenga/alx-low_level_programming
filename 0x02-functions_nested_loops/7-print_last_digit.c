@@ -1,10 +1,11 @@
 #include "main.h"
 #include "6-abs.c"
+
 /**
- * print_last_digit - main function
- * @n: integer to get the last digit
+ * print_last_digit - prints the last digit of anumber
+ * @n: the int to extract last digit from
  *
- * Returnd: last digit of n
+ * Return: return value of last digit
  *
  */
 int print_last_digit(int n)

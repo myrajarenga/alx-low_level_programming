@@ -2,7 +2,8 @@
 
 /**
  *i
- * jack_bauer - maint thing
+ * jack_bauer - print every minute of the day of jack Bauer
+ * strating from 00:00 to 23:59
  *
  */
 

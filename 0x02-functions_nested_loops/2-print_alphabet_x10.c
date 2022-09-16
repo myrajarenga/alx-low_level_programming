@@ -3,20 +3,27 @@
 /**
  * print_alphabet_x10 - entry point
  * Descriptiopn: print alphabet in lowercase ten times followed by anew line
- * Return: Always 0
+ * 
  */
 void print_alphabet_x10(void)
 {
 
-	char alphabet;
+	char ch;
 	int j;
 
-	for (j = 0; j < 10; j++)
+
+	j = 0;
+
+	while (j < 10)
 	{
-		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+		ch = 'a';
+		while (ch <= 'z')
 		{
-			_putchar (alphabet);
+			_putchar(ch);
+			ch++;
 		}
+		_putchar('\n');
+		j++;
 	}
-	_putchar('\n');
 }
+

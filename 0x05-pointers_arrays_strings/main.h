@@ -14,9 +14,18 @@ int _putchar(char c);
  */
 void reset_to_98(int *n);
 
+/**
+ * swap_int - swaps integer value
+ * @a: first integer
+ * @b: second integer
+ */
+void swap_int(int *a, int *b);
 
-void Swap_int(int *a, int *b);
-
-
-
+/**
+ * _strlen - length of string
+ * @s: string
+ *
+ *Return: returns length
+ */
+int _strlen(char *s);
 #endif

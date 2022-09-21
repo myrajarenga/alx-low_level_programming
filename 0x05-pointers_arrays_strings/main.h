@@ -70,4 +70,19 @@ void print_array(int *a, int n);
  */
 void puts_half(char *str);
 
+/**
+ * _strcpy - main function
+ * @dest: destination
+ * @src: source
+ * Return: retun value
+ */
+char *_strcpy(char *dest, char *src);
+
+/**
+ *_atoi - convert char to int
+ * @s: string
+ *
+ * Return: returns avalue
+ */
+int _atoi(char *s);
 #endif

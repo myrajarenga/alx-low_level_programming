@@ -4,18 +4,19 @@
 /**
  * rev_string - reverse string value
  *
- * @s: string to print
+ * @s: string to reverse
  */
 void rev_string(char *s)
 {
 	int a;
 	int b;
+	int len;
 
-	for (a = 0; a < _strlen(s) / 2; a++)
+	for (a = 0; a < len/ 2; a++)
 	{
-		b = s[a];
-		s[a] = s[_strlen(s) - 1 - 1];
-		s[_strlen(s) - 1 - 1] = b;
+		b = *(s + a);
+		*(s + a) = *(s + len - a - 1);
+		*(s + len - a - 1) = b;
 
 	}
 }

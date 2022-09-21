@@ -19,7 +19,7 @@ void puts_half(char *str)
 /**
  * _strlen - retun the lenge of a string
  * @s: string
- * Return the length of agiven string
+ * Return: the length of agiven string
  */
 int _strlen(char *s)
 {
@@ -29,4 +29,3 @@ int _strlen(char *s)
 		len++;
 	return (len);
 }
-

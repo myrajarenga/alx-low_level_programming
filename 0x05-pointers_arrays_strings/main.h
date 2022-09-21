@@ -55,4 +55,14 @@ void rev_string(char *s);
  * @str: string to put twice
  */
 void puts2(char *str);
+
+/**
+ * print_array - prints array
+ * @a: array
+ * @n: number of elements
+ *
+ */
+void print_array(int *a, int n);
+
+
 #endif

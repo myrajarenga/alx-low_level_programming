@@ -64,5 +64,10 @@ void puts2(char *str);
  */
 void print_array(int *a, int n);
 
+/**
+ * puts_half - print second half of string
+ * @st: string to put half
+ */
+void puts_half(char *str);
 
 #endif

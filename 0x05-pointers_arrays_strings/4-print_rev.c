@@ -5,7 +5,7 @@
  * @s: parameter that contain astring
  * Return: void
  */
-int print_rev(char *s)
+void print_rev(char *s)
 {
 	int count = 0;
 
@@ -17,4 +17,5 @@ int print_rev(char *s)
 	}
 	for (count--; count >= 0; count--)
 		_putchar(s[count]);
+
 }

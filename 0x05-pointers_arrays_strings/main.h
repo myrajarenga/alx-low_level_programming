@@ -42,4 +42,11 @@ void _puts(char *str);
  */
 
 void print_rev(char *s);
+
+/**
+ * rev_string - reverse astring value
+ * @s: string to print
+ */
+void rev_string(char *s);
+
 #endif

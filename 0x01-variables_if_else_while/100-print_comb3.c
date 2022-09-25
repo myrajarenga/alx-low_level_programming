@@ -2,9 +2,7 @@
 
 /**
  * main - entry point 
- *
  * Return: always 0 
- *
  */
 
 int main(void)
@@ -16,12 +14,13 @@ int main(void)
 	{
 		for (b = 10; b <= 19; b++)
 		{
-			if (a < b)
+			if ((b % 10) > (a % 10))
 			{
-				putchar(a);
-				putchar(b);
+				putchar((a % 10) + '0'));
+				putchar((b % 10) + '0'));
 			}
-			if (a != '8' || (a == '8' && b != '9'))
+			
+				if (a != 18 || b != 19))
 				{
 					putchar(',');
 					putchar(' ');

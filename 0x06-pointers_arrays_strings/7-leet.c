@@ -8,25 +8,19 @@
  */
 char *leet(char *s)
 {
-	unsigned int i;
+	int i, n;
+	char letters[] = "aAeEoOtTlL";
+	char numbers[] = "4433007711";
 
-	char *s = c;
-	char key[] = {'A', 'E', 'O', 'T', 'L'};
-	int value[] = {4, 3, 0, 7, 1}
-
-	while (*c)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; i < sizeof(key) / sizeof(cha); i++)
+		for (n = 0; n < 10; n++)
 		{
-			/*32 is the diffrence betwwen lowecase letters and uppercase letters*/
-
-			if (*c == key[i] || *c == key[i] + 32)
+			if (s[i] == letters[n])
 			{
-				*c = 48 + value[i];
+				s[i] = numbers[n];
 			}
-
 		}
-		c++
 	}
 	return (s);
 }

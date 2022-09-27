@@ -2,7 +2,7 @@
 
 /**
  * cap_string - capitalise all words in astring
- * @s: string to captalisze
+ * @s: string to captalize
  * Return: addres of s
  */
 char *cap_string(char *s)
@@ -15,15 +15,15 @@ char *cap_string(char *s)
 			s[0] = s[0] - 32;
 
 		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ','
-			|| s[i] == ';' || s[i] == '.' || s[i] == '!' || s[i] == '?'
+				|| s[i] == ';' || s[i] == '.' || s[i] == '!' || s[i] == '?'
 				|| s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{'
-				 || s[i] == '}')
+				|| s[i] == '}')
 
 		{
-				if (s[i + 1] >= 97 && s[i + 1] <= 122)
-				{
-					s[i + 1] = s[i + 1] - 32;
-				}
+			if (s[i + 1] >= 97 && s[i + 1] <= 122)
+			{
+				s[i + 1] = s[i + 1] - 32;
+			}
 		}
 	}
 	return (s);

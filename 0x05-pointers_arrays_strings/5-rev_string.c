@@ -1,6 +1,6 @@
 #include "main.h"
 #include "2-strlen.c"
-
+#include <string.h>
 /**
  * rev_string - reverse string value
  *
@@ -10,7 +10,9 @@ void rev_string(char *s)
 {
 	int a;
 	int b;
-	int len;
+
+
+	int len = strlen(s);
 
 	for (a = 0; a < len/ 2; a++)
 	{

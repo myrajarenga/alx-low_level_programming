@@ -1,37 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - entry point 
- * Return: always 0 
- */
+* main - entry point
+* Return: always 0
+*/
 
 int main(void)
 {
-	int a;
-	int b;
+	int i = 0;
+	int j;
+	int k;
 
-	for (a = 10; a <= 19; a++)
-	{
-		for (b = 10; b <= 19; b++)
+		while (i <= 99)
 		{
-			if ((b % 10) > (a % 10))
+			j = (i / 10 + '0');
+			k = (i % 10 + '0');
+
+		if (j > k)
+		{
+			putchar(j);
+			putchar(k);
+
+			if (i != 89)
 			{
-				putchar((a % 10) + '0'));
-				putchar((b % 10) + '0'));
+				putchar(',');
+				putchar(' ');
 			}
-			
-				if (a != 18 || b != 19))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-
-			}
-
 		}
-
+		i++;
 	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
 

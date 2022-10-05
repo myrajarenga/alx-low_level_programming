@@ -1,32 +1,37 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - a program that adds numbers
- * prints the result followed by anew line
+ * prints the reult followed by anew line
  * @argc:number of argument passed to the function
  * @argv:argument vector of pointers to strings
  * Return: 0 if no error else 1
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0, i, j;
+	int a = 0, i, j;
 
 	for  (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-		if (argv[i][j] < '0' || argv[i][j] > '9')
+			if (isdigit(argv[i][j] != 0))
 			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
 
 	}
-	sum = atoi(argv[i]) + sum;
+	for (i = 1; i < argc; i++)
+	{
+		a += atoi(argv[i]);
 
-	printf("%d\n", sum);
+
+	}
+	printf("%d\n", a);
 	return (0);
 }
 

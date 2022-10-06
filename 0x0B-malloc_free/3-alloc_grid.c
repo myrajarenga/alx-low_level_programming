@@ -6,7 +6,7 @@
  * alloc_grid - afunction that returns apointer to
  * a 2 dimensional arrayof integers
  *
- *@ width: width
+ *@width: width
  *@height: height
  * Return: NULL on failure
  */

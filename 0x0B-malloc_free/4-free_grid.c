@@ -1,8 +1,8 @@
 #include "main.h"
-
+#include <stdlib>
 /**
-*free_grid - frees a 2D array
-*grid: memeory to be freed
+*free_grid - freememory allocated to previous  2D array
+*@grid: memeory to be freed
 *@height :height of the array
 *Return: return void
 */

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * mallock_checked - allocate memory using malloc
+ * malloc_checked - allocate memory using malloc
  * @b:memory to allocate
  * Return: pointer to allocated memory or
  * normal process termination if error

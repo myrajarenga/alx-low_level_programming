@@ -8,32 +8,38 @@
  */
 int main(void)
 {
-	int i = 0;
-	int a;
-	int b;
-	int c;
+        int num1 = 48;
+        int num2;
+        int num3;
 
-	while (i <= 999)
-	{
-		a = (i / 100 + '0');
-		b = (i / 10 + '0');
-		c = (i % 10 + '0');
+        int comma = 44; 
 
-		if ((a < b) && (b < c))
-		{
-			putchar(a);
-			putchar(b);
-			putchar(c);
+        while (num1 <= 57) 
+        {
+                num2 = num1 + 1;
 
-			if (i != 789)
-			{
-				putchar(',');
-				putchar(' ');
+                while (num2 <= 57) 
+                {
+                        num3 = num2 +1;
 
-			}
-		}
-		i++;
-	}
-	putchar('\n');
-	return (0);
-}
+                        while  (num3 <= 57)
+                        {
+
+                                putchar(num1);
+                                putchar(num2);
+                                putchar(num3);
+                                if (num1 !=55 || num2 !=56 || num3 !=57)
+                                {
+                                        putchar(comma);
+                                        putchar(32);
+                                }
+                                num3 += 1;
+                        }
+                        num2 += 1;
+                }
+
+                num1 += 1;
+        }
+
+        return (0);
+} 

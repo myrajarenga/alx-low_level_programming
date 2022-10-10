@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- *i
  * jack_bauer - print every minute of the day of jack Bauer
  * strating from 00:00 to 23:59
- *
+ * Returns :Nothing
  */
 
 

@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_string - function that prints astring
+ * print_strings - function that prints astring
  * @n: no of strings to print
  * @separator: string that separate arguments
  * Return: return void

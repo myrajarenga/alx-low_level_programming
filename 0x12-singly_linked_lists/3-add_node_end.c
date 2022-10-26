@@ -11,29 +11,29 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
-	int len = 0;
-	list_t *tmp = *head;
+	list_t *new; /* declare new node*/
+	int len = 0; /* intialize len to 0 */
+	list_t *tmp = *head; /*intialize list_t *tmp and equate it to  head pointer */
 
-	new = malloc(sizeof(list_t));
+	new = malloc(sizeof(list_t));/* allocate memory */
 	if (!new)
 	{
-		free(new);
+		free(new);/* if memory of new node is NULL free it */
 		return (NULL);
 	}
 	for (len = 0; str[len];)
 		len++;
 
-	new->str = strdup(str);
+	new->str = strdup(str);/* duplicate str */
 	new->len = len;
-	new->next = NULL;
+	new->next = NULL;/*find out if next node is NULL */
 	if (*head == NULL)
-		*head = new;
+		*head = new;/* if pointer to the new node is null return new node */
 	else
 	{
-		tmp = *head;
+		tmp = *head;/*allocate pointer to the last node */
 		while (tmp->next != NULL)
-			tmp = tmp->next;
+			tmp = tmp->next; /* them tmp points to next node which is new and is the last node */
 		tmp->next = new;
 	}
 

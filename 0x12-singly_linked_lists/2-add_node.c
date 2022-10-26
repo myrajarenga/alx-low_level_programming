@@ -22,11 +22,11 @@ list_t *add_node(list_t **head, const char *str)
 
 	for (len = 0; str[len];)
 		len++;
-	new->str = strdup(str);
-	new->len = len;
-	new->next = *head;
+	new->str = strdup(str);/* new contains cpy of str */
+	new->len = len; /*new also contains len */
+	new->next = *head;/* made next new node as head */
 
-	*head = new;
+	*head = new;/* head is now pointing to new */
 
 	return (new);
 }

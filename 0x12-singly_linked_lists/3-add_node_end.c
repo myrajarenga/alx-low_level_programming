@@ -13,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new; /* declare new node*/
 	int len = 0; /* intialize len to 0 */
-	list_t *tmp = *head; /*intialize list_t *tmp and equate it to  head pointer */
+	list_t *tmp = *head; /*intialize list_t *tmp ponter and equate it to  head pointer */
 
 	new = malloc(sizeof(list_t));/* allocate memory */
 	if (!new)
@@ -33,7 +33,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		tmp = *head;/*allocate pointer to the last node */
 		while (tmp->next != NULL)
-			tmp = tmp->next; /* them tmp points to next node which is new and is the last node */
+			tmp = tmp->next; /* then tmp points to next node which is new and is the last node */
 		tmp->next = new;
 	}
 

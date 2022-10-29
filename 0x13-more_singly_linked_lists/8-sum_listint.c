@@ -2,7 +2,7 @@
 
 /**
 * sum_listint - sum of all the data (n) of a listint_t linked list
-* @head entry point
+* @head:entry point
 *
 * Return: sum
 */
@@ -12,7 +12,7 @@ int sum_listint(listint_t *head)
 
 	while (head)
 	{
-		sum = head->n;
+		sum += head->n;
 		head = head->next;
 	}
 	return (sum);

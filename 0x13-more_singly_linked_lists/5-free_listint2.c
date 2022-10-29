@@ -2,9 +2,9 @@
 
 /**
 * free_listint2 - frees alist
-* @head:pointer at head 
+* @head:pointer at head
 *
-* Return nothing
+* Return:nothing
 */
 void free_listint2(listint_t **head)
 {
@@ -18,5 +18,4 @@ void free_listint2(listint_t **head)
 		free(*head);
 		*head = next;
 	}
-	
 }

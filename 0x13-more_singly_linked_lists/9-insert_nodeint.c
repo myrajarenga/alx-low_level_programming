@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * insert_nodeint - function that inserts anode at apostion
- * @head;:pointer to head
+ * insert_nodeint_at_index - function that inserts anode at apostion
+ * @head:pointer to head
  * @idx: index
  * @n: int n
- * Returns: Address of new node
+ * Return: Address of new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {

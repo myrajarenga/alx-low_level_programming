@@ -18,12 +18,12 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (*b == '0' || *b == '1')
 		{
-		val <<= 1;
-		val += *b - '0';
-		b++;
+			val <<= 1;
+			val += *b - '0';
+			b++;
 		}
 		else
-		return (0);
+			return (0);
 	}
 	return (val);
 }

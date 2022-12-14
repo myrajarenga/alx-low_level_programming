@@ -1,6 +1,7 @@
 #include "lists.h"
+
 /**
- * print+dlistint - prints all elements od alinked list
+ * print_dlistint - prints all elements od alinked list
  * @h: head pointer to list
  * Return: number of nodes
  */

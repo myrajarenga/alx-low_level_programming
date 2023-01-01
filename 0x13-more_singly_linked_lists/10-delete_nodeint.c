@@ -6,35 +6,34 @@
 * @head: head pointer
 * @index: node to be deleted
 *
-* Return: 1if success, -1 if it fails
+* Return: 1 on  success, -1 if it fails
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *temp, *p;
-	unsigned int i;
+	listint_t *temp, *ptr = *head;
+	unsigned int i = 0;
 
-	if (head == NULL || *head == NULL)
+	if (*head == NULL)
 		return (-1);
+
+
 	if (index == 0)
 	{
-		p = (*head)->next;
-		free(*head);
-		*head = p;
-		return (1);
+		*head = ptr->next;
+		if (ptr->next == NULL)
+			return (-1);
+		ptr->next = NULL;
+		free(ptr);
+			return (1);
 	}
 	temp = *head;
-
-	while (i < index - 1)
+	while (i < index - 1 )
 	{
 		temp = temp->next;
 		i++;
-		if (temp->next == NULL)
-		return (-1);
-		temp = temp->next;
 	}
-	p = temp->next;
-	temp->next = p->next;
-
-	free(p);
+	ptr = temp->next;
+	temp->next = ptr->next;
+	free (ptr);
 	return (1);
 }

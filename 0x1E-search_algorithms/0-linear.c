@@ -7,7 +7,7 @@
  * @value: the value to search
  * Return: -1 on failure, the index on success
  */
- int binary_search(int *array, size_t size, int value)
+ int linear_search(int *array, size_t size, int value)
 {
 	size_t i = 0;
 
